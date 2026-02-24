@@ -19,7 +19,6 @@ while True:
                 print(f"Removed: {removed}")
             except (ValueError, IndexError):
                 print("Invalid numbers. Please try again.")
-        task.pop()
     elif commands == "list":
         if not task:
             print("Task empty")
