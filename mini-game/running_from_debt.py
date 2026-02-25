@@ -6,6 +6,9 @@ money = 0
 has_scooter = False
 
 while True:
+    interest = int(debt * 0.1)
+    debt += interest
+    
     print(f"\n--- Status: Money ${money} | Stamina {stamina} | Debt ${debt} ---")
     print("Nijika: Ryo!! Where is my money?!")
 
@@ -26,7 +29,7 @@ while True:
             money += found_money
         else:
             print("Nijika: Caught you! You're too tired to run.")
-            debt += 50
+            debt += 50 # Tax for making her pursue you.
 
     elif choice == "pay":
         if money <= 0:
@@ -36,7 +39,10 @@ while True:
                 pay_amount = int(input(f"How much will you pay? (Debt: ${debt}): "))
                 if pay_amount > money:
                     print("Ryo: I don't actually have that much...")
+                elif pay_amount <= 0:
+                    print("Nijika: Stop playing around!")
                 else:
+                    actual_payment = min(pay_amount, debt)
                     money -= pay_amount
                     debt -= pay_amount
                     print(f"Nijika: Thank you. Only ${debt} left to go...")
@@ -70,6 +76,16 @@ while True:
                 print("Ryo: I have the scooter... but I'm too tired to kickstart it.")
         else:
             print("Nijika: Running on foot? I'm the drummer, Ryo. My cardio is better than yours.")
+
+    if debt >= 5000:
+        print("\n" + "!" * 40)
+        print("Nijika: FIVE. THOUSAND. DOLLARS.")
+        print("Nijika: Ryo, I've been patient. I've been kind.")
+        print("Nijika: *cracks knuckles* But I think it's time you 'volunteered' at STARRY...")
+        print("Nijika: ...forever.")
+        print("\nEnding: LABOR CAMP. You are now a permanent dishwasher. The bass is gone.")
+        print("!" * 40)
+        break
 
     if debt <= 0:
         print("\nNijika: You actually paid it back?! Is the world ending?")

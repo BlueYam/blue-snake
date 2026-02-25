@@ -52,7 +52,7 @@ class Character:
             exit()
 
     def __str__(self):
-        print(f"--- {self.name} | Battery: {self.battery} | Willpower: {self.willpower} | Shame: {self.shame} ---")
+        return f"--- {self.name} | Battery: {self.battery} | Willpower: {self.willpower} | Shame: {self.shame} ---"
 
     def ryo_support(self, target):
         if self.willpower >= 20:

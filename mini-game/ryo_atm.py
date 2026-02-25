@@ -30,8 +30,10 @@ else:
         if action == "deposit":
             try:
                 amount = int(input("Giving me more? You're a saint: "))
-                if amount > 0:
+                if amount < 0:
                     print("I can't take 'nothing.' This isn't a charity.")
+                elif amount > 100000:
+                    print("Stop lying. We know you are not that rich.")
                 else:
                     money += amount
                     print(f"I'll keep this ${amount} very safe. *Clutches bass guitar*")
