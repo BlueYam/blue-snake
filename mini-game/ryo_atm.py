@@ -30,15 +30,20 @@ else:
         if action == "deposit":
             try:
                 amount = int(input("Giving me more? You're a saint: "))
-                money += amount
-                print(f"I'll keep this ${amount} very safe. *Clutches bass guitar*")
+                if amount > 0:
+                    print("I can't take 'nothing.' This isn't a charity.")
+                else:
+                    money += amount
+                    print(f"I'll keep this ${amount} very safe. *Clutches bass guitar*")
             except ValueError:
                 print("Numbers only. I'm too tired for riddles.")
 
-        elif action == "borrow" or action == "withdraw":
+        elif action in ["borrow", "withdraw"]:
             try:
                 amount = int(input("You want it back? How selfish: "))
-                if amount > money:
+                if amount <= 0:
+                    print("You can't withdraw air you know?")
+                elif amount > money:
                     print("I don't have that. I already spent—I mean, the system is down.")
                 else:
                     money -= amount

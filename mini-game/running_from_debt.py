@@ -59,7 +59,7 @@ while True:
         print("Ryo: *Eating weeds in the park* Peaceful.")
         stamina = min(100, stamina + 40)
 
-    elif choice == "disappear":
+    elif choice in ["escape", "disappear"]:
         if has_scooter:
             if stamina >= 70:
                 print("Ryo: *Kickstarts the rusty engine* See ya, Nijika!")
