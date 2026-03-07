@@ -1,5 +1,6 @@
 from random import choice, random
 
+
 class Character:
     def __init__(self, name, battery, willpower, shame, money):
         self.name = name
@@ -18,7 +19,7 @@ class Character:
         if self.battery <= 0:
             print(f"{self.name} has turned into a slime!")
             exit()
-    
+
     def gain_shame(self, amount):
         self.shame += amount
         print(f"{self.name} gained {amount} of Shame!")
@@ -32,7 +33,9 @@ class Character:
                 print(f"{self.name} hide in a trashcan!")
                 self.shame = max(0, self.shame - amount)
                 self.willpower -= amount
-                print(f"{self.name} lost {amount} of Shame in exchange for {amount} of Willpower's")
+                print(
+                    f"{self.name} lost {amount} of Shame in exchange for {amount} of Willpower's"
+                )
             else:
                 print(f"{self.name} doesn't have the willpower!")
         elif method == "bribe":
@@ -42,12 +45,14 @@ class Character:
                 self.money -= amount
                 print(f"{self.name} lost {amount} Shame in exchange for ${amount}.")
             else:
-                print(f"You're too broke to bribe anyone!")
+                print("You're too broke to bribe anyone!")
 
     def be_normal(self, amount):
         self.willpower += amount
         self.shame -= amount
-        print(f"{self.name} gained {amount} of Willpower but gained {amount} of Shame in the process!")
+        print(
+            f"{self.name} gained {amount} of Willpower but gained {amount} of Shame in the process!"
+        )
         if self.willpower >= 100:
             print(f"{self.name} has turned into a Giga Chad and left!")
             exit()
@@ -61,7 +66,8 @@ class Character:
             target.battery += 10
             self.willpower -= 20
         else:
-            print(f"{self.name} is staring blankly at a leaf.")        
+            print(f"{self.name} is staring blankly at a leaf.")
+
 
 bocchi = Character(name="Bocchi", battery=40, willpower=20, shame=30, money=100)
 ryo = Character(name="Ryo", battery=100, willpower=60, shame=0, money=0)

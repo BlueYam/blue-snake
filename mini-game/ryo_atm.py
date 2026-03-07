@@ -5,7 +5,7 @@ pin = randint(1, 5)
 
 print("...Oh. It's you.")
 print("Welcome to the 2nd-Hand Bass Fund—I mean, the ATM.")
-print(f"I forgot the PIN. It's like... 1 through 5. Whatever.")
+print("I forgot the PIN. It's like... 1 through 5. Whatever.")
 
 try:
     guess = int(input("Guess it. If you're wrong, I'm buying weeds for dinner: "))
@@ -14,15 +14,19 @@ except ValueError:
     exit()
 
 if guess != pin:
-    print(f"\nWrong. Thanks for the ${money}. I saw a vintage Precision Bass online... it's mine now.")
+    print(
+        f"\nWrong. Thanks for the ${money}. I saw a vintage Precision Bass online... it's mine now."
+    )
 else:
     print("\n...Tch. Lucky guess. I guess I'll let you see your 'savings.'")
-    
+
     while True:
         if random() < 0.20 and money > 50:
             robbery = 50
             money -= robbery
-            print(f"\n(Note: ${robbery} disappeared for 'administrative expenses.' Don't ask.)")
+            print(
+                f"\n(Note: ${robbery} disappeared for 'administrative expenses.' Don't ask.)"
+            )
 
         print(f"\n[ Balance: ${money} ]")
         action = input("What do you want? (deposit / borrow / quit): ").lower()
@@ -46,7 +50,9 @@ else:
                 if amount <= 0:
                     print("You can't withdraw air you know?")
                 elif amount > money:
-                    print("I don't have that. I already spent—I mean, the system is down.")
+                    print(
+                        "I don't have that. I already spent—I mean, the system is down."
+                    )
                 else:
                     money -= amount
                     print(f"Fine. Take your ${amount}. I'll just eat weeds today.")
@@ -54,8 +60,10 @@ else:
                 print("Use a number. Please.")
 
         elif action == "quit":
-            print("Leaving already? Tell Nijika I'm 'practicing'. I'll return her money later (if I remember).")
-            break 
-        
+            print(
+                "Leaving already? Tell Nijika I'm 'practicing'. I'll return her money later (if I remember)."
+            )
+            break
+
         else:
             print(f"'{action}'? Is that a new genre of Math Rock? I don't get it.")

@@ -1,29 +1,32 @@
-# Python Learning Repository
+<div align="center"> 
 
-A collection of mini-games and data structure explorations created to track learning progress in Python programming.
+<h1> 𝔅𝔩𝔲𝔢 𝔖𝔫𝔞𝔨𝔢 </h1>
 
-## Project Structure
+✧ ——— Python Learning Repository ——— ✧
 
-### Mini Games (`mini-game/`)
-**Beginner-level games built with core Python concepts:**
+A minimalist collection of Python explorations and logic-based simulations. This repository tracks progress through core programming concepts, data structures, and terminal-based game.
 
-- **Guess the Numbers** - A number guessing game where players have 5 attempts to guess a random number between 1-20
-- **Todo List** - A command-line task manager with add, delete, list, and quit operations
-- **Ryo ATM** - A humorous ATM simulator where you guess a PIN (1-5) to access funds
-- **Social Anxiety** - A character stat management game where you balance social battery, willpower, shame, and money while navigating social situations with different coping mechanisms
-- **Running from Debt** - An escape-themed game where Ryo flees from Nijika while trying to earn money and pay off mounting debt (with interest!)
-- **Mental Breakdown** - A Python-based CLI tool that fetches real-time lyrics using the Genius API and displays them with a synchronized typewriter animation effect. Securely managed with environment variables.
+</div>
 
-### Not-So-Mini Game (`not-so-mini-game/`)
-**A more advanced text-based simulation game:**
+---
 
-- **Weeds Eating Simulator** - A character survival game where you manage stats (HP, Stamina, Cool, Money) while paying off debt
-  - Features: Character class system, random events, multiple gameplay options
-  - Goal: Survive, manage finances, and maintain your cool factor
-- **Kesshoku-Fight!** – A terminal-based combat simulator where members of the band face off in turn-based tactical duels
-  - Features: Object-Oriented character system, dynamic damage/defense calculations, and 20% critical hit mechanics.
-  - Goal: Select your favorite band member, survive the exchange of attacks, and be the last musician standing.
+## Repository Structure
 
+### Core Modules (`mini-game/`)
+- **Guess the Numbers**: A desperate gamble against a random seed. Five attempts to find the truth between 1 and 20 before the window closes.
+- **Todo List**: A command-line ledger for tracking the weight of daily burdens. Add, delete, or quit.
+- **Ryo ATM**: A PIN-guessing ritual (1-5) to access non-existent funds. A study in false hope.
+- **Social Anxiety**: A stat-management trial. Balance shame, willpower, and money while navigating the crushing weight of social interaction.
+- **Running from Debt**: Flee from the looming figure of Nijika. Earn coin, outrun the interest rates, and try to escape the inevitable debt.
+- **Mental Breakdown**: A CLI tool that calls into the Genius API to fetch lyrics. Synchronized animations simulate a mental breakdown in real-time. Securely masked behind environment variables.
+
+---
+
+### Advanced Simulations (`not-so-mini-game/`)
+- **Weeds Eating Simulator**: The ultimate exercise in destitution. Manage HP, Stamina, and "Cool" while subsisting on local flora. Features a class-based system for the refined starving artist.
+- **Kesshoku-Fight!**: Tactical turn-based duels between the band members. Features dynamic damage scaling and 20% critical hit mechanics. Survival is the only win condition.
+
+---
 
 ### Data Structures (`data-structures/`)
-- **Lists** - Comprehensive examples of Python list operations including creation, adding, deleting, sorting, and common pitfalls
+- **Lists**: Comprehensive research into list operations. A study on how to create, sort, and destroy data without falling into common pitfalls.

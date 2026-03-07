@@ -1,5 +1,6 @@
 import random
 
+
 class Character:
     def __init__(self, name, hp, attack, defense, move_name):
         self.name = name
@@ -23,17 +24,21 @@ class Character:
         dealt = target.take_damage(damage)
         return dealt, crit > 1.0
 
+
 class Bocchi(Character):
     def __init__(self):
         super().__init__("Hitori 'Bocchi' Gotoh", 80, 25, 5, "Cyber-Psychosis Shred")
+
 
 class Nijika(Character):
     def __init__(self):
         super().__init__("Nijika Ichiji", 100, 18, 10, "Dorito Drum Barrage")
 
+
 class Ryo(Character):
     def __init__(self):
         super().__init__("Ryo Yamada", 110, 15, 15, "Bass Slap (Debt Collection)")
+
 
 class Kita(Character):
     def __init__(self):

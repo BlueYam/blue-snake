@@ -8,11 +8,13 @@ has_scooter = False
 while True:
     interest = int(debt * 0.1)
     debt += interest
-    
+
     print(f"\n--- Status: Money ${money} | Stamina {stamina} | Debt ${debt} ---")
     print("Nijika: Ryo!! Where is my money?!")
 
-    choice = input("What would you do? (run, pay, work, rest, escape): ").lower().strip()
+    choice = (
+        input("What would you do? (run, pay, work, rest, escape): ").lower().strip()
+    )
 
     if choice == "run":
         if stamina >= 20:
@@ -20,16 +22,20 @@ while True:
             stamina -= 20
             if random() < 0.10:
                 found_money = randint(200, 500)
-                print("Ryo: *Trips over a discarded wallet* ...Wait, there's no ID in here.")
+                print(
+                    "Ryo: *Trips over a discarded wallet* ...Wait, there's no ID in here."
+                )
                 print(f"Ryo: JACKPOT. I found ${found_money}!")
             else:
                 found_money = randint(10, 20)
                 print("Ryo: *Sliding into a back alley* Phew, she's gone.")
-                print(f"Ryo: Oh, a shiny ${found_money} coin on the ground. Today is my lucky day.")
+                print(
+                    f"Ryo: Oh, a shiny ${found_money} coin on the ground. Today is my lucky day."
+                )
             money += found_money
         else:
             print("Nijika: Caught you! You're too tired to run.")
-            debt += 50 # Tax for making her pursue you.
+            debt += 50  # Tax for making her pursue you.
 
     elif choice == "pay":
         if money <= 0:
@@ -55,8 +61,12 @@ while True:
             money += 150
             stamina -= 30
             if random() < 0.20 and not has_scooter:
-                print("\nSeika (Manager): Ryo, this old scooter is taking up space in the alley.")
-                print("Seika: Take it and get out of my sight. Maybe use it to find a real job.")
+                print(
+                    "\nSeika (Manager): Ryo, this old scooter is taking up space in the alley."
+                )
+                print(
+                    "Seika: Take it and get out of my sight. Maybe use it to find a real job."
+                )
                 has_scooter = True
         else:
             print("Ryo: I'm too hungry/tired to hold my bass.")
@@ -70,20 +80,28 @@ while True:
             if stamina >= 70:
                 print("Ryo: *Kickstarts the rusty engine* See ya, Nijika!")
                 print("Nijika: HEY! GET BACK HERE YOU LITTLE!")
-                print("\nEnding: You successfully fled to the next ward. Responsibility avoided.")
+                print(
+                    "\nEnding: You successfully fled to the next ward. Responsibility avoided."
+                )
                 break
             else:
                 print("Ryo: I have the scooter... but I'm too tired to kickstart it.")
         else:
-            print("Nijika: Running on foot? I'm the drummer, Ryo. My cardio is better than yours.")
+            print(
+                "Nijika: Running on foot? I'm the drummer, Ryo. My cardio is better than yours."
+            )
 
     if debt >= 5000:
         print("\n" + "!" * 40)
         print("Nijika: FIVE. THOUSAND. DOLLARS.")
         print("Nijika: Ryo, I've been patient. I've been kind.")
-        print("Nijika: *cracks knuckles* But I think it's time you 'volunteered' at STARRY...")
+        print(
+            "Nijika: *cracks knuckles* But I think it's time you 'volunteered' at STARRY..."
+        )
         print("Nijika: ...forever.")
-        print("\nEnding: LABOR CAMP. You are now a permanent dishwasher. The bass is gone.")
+        print(
+            "\nEnding: LABOR CAMP. You are now a permanent dishwasher. The bass is gone."
+        )
         print("!" * 40)
         break
 
