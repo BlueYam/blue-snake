@@ -30,3 +30,4 @@ A minimalist collection of Python explorations and logic-based simulations. This
 
 ### Data Structures (`data-structures/`)
 - **Lists**: Comprehensive research into list operations. A study on how to create, sort, and destroy data without falling into common pitfalls.
+- **Strings**: A deep dive into the immutable nature of characters. Learn to manipulate, slice, and transform text—understanding that while a string can be reshaped, its original essence can never truly be changed.
