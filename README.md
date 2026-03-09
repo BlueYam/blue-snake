@@ -13,9 +13,9 @@ A minimalist collection of Python explorations and logic-based simulations. This
 ## Repository Structure
 
 ### Core Modules (`mini-game/`)
-- **Guess the Numbers**: A desperate gamble against a random seed. Five attempts to find the truth between 1 and 20 before the window closes.
-- **Todo List**: A command-line ledger for tracking the weight of daily burdens. Add, delete, or quit.
-- **Ryo ATM**: A PIN-guessing ritual (1-5) to access non-existent funds. A study in false hope.
+- **Desperate Gamble**: One seed. Twenty possibilities. Five chances to survive. The window is closing, and the numbers are cold. Find the truth, or become part of the noise.
+- **Grimoire of Unfinished Business**: A command-line task manager for the weary soul. Where others see a "To-Do List," you see a collection of bound spirits.
+- **Ryo ATM**: A PIN-guessing ritual (1-5) to access imaginary funds. A study in false hope.
 - **Social Anxiety**: A stat-management trial. Balance shame, willpower, and money while navigating the crushing weight of social interaction.
 - **Running from Debt**: Flee from the looming figure of Nijika. Earn coin, outrun the interest rates, and try to escape the inevitable debt.
 - **Mental Breakdown**: A CLI tool that calls into the Genius API to fetch lyrics. Synchronized animations simulate a mental breakdown in real-time. Securely masked behind environment variables.
