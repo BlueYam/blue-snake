@@ -2,7 +2,7 @@
 
 <h1> 𝔅𝔩𝔲𝔢 𝔖𝔫𝔞𝔨𝔢 </h1>
 
-✧ ——— Python Learning Repository ——— ✧
+✧ ——— Code. Error. Despair. ——— ✧
 
 A minimalist collection of Python explorations and logic-based simulations. This repository tracks progress through core programming concepts, data structures, and terminal-based game.
 
@@ -19,6 +19,7 @@ A minimalist collection of Python explorations and logic-based simulations. This
 - **Social Anxiety**: A stat-management trial. Balance shame, willpower, and money while navigating the crushing weight of social interaction.
 - **Running from Debt**: Flee from the looming figure of Nijika. Earn coin, outrun the interest rates, and try to escape the inevitable debt.
 - **Mental Breakdown**: A CLI tool that calls into the Genius API to fetch lyrics. Synchronized animations simulate a mental breakdown in real-time. Securely masked behind environment variables.
+- **Summoning Ritual**: Feel the power to summon card data, recover forgotten TCG release dates, and pull high-definition imagery from the void (YGOPRODeck Database).
 
 ---
 
